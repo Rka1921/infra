@@ -4,12 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
-import { MasterViewComponent } from './master-view/master-view.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'master-view', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: 'master-view', component: MasterViewComponent, data: { text: 'Master View' } },
+  { path: 'login', component: LoginComponent, data: { text: 'login' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

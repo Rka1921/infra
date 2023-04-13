@@ -3,30 +3,33 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MasterViewComponent } from './master-view/master-view.component';
-import { IgxCardModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxDatePickerModule, IgxInputGroupModule, IgxCheckboxModule, IgxAccordionModule, IgxExpansionPanelModule } from 'igniteui-angular';
+import { LoginComponent } from './login/login.component';
+import { IgxNavbarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxNavigationDrawerModule, IgcFormsModule, IgxCardModule, IgxDatePickerModule, IgxInputGroupModule, IgxCheckboxModule, IgxAccordionModule, IgxExpansionPanelModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MasterViewComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxCardModule,
+    IgxNavbarModule,
     IgxButtonModule,
     IgxRippleModule,
     IgxIconModule,
+    IgxNavigationDrawerModule,
+    IgcFormsModule,
+    FormsModule,
+    IgxCardModule,
     IgxDatePickerModule,
     IgxInputGroupModule,
     IgxCheckboxModule,
     IgxAccordionModule,
-    IgxExpansionPanelModule,
-    FormsModule
+    IgxExpansionPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
