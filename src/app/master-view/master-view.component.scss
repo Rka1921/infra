@@ -1,0 +1,51 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.card {
+  width: 320px;
+  height: max-content;
+  min-width: 320px;
+  flex-shrink: 0;
+}
+.accordion {
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.textarea {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.button {
+  height: max-content;
+}
+.button_1 {
+  margin: 2px;
+  height: max-content;
+  flex-shrink: 0;
+}
+.date-picker {
+  height: max-content;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+.checkbox {
+  width: max-content;
+  height: max-content;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
